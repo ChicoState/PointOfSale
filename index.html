@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Point of Sale</title>
+    <!-- BOOTSTRAP (style only)-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script type="text/javascript" src="sales.js"></script>
+    <script>
+    </script>
+  </head>
+  <body lang="en-US">
+    <h1>Purchased Item Price</h1>
+    <div class="container-fluid">
+      <div class="input-group col-sm-2" style="float: left;">
+        <span class="input-group-addon">$</span>
+        <input type="text" class="form-control" id="price">
+        <span class="input-group-btn">
+          <button class="btn btn-primary" type="button" onclick="addItem();">
+            Add
+          </button>
+        </span>
+      </div>
+      <div class="col-sm-2" style="float: left;">
+          <span class="badge" id="subtotal">
+            $0.00
+          </span>
+      </div>
+      <a href="receipt.html">Get receipt...</a>
+    </div>
+  </body>
+</html>
